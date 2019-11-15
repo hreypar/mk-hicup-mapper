@@ -1,0 +1,12 @@
+#!/bin/bash
+##
+## USAGE:
+## bin/targets
+
+find -L data/ \
+	-name "*trunc.fastq.gz" \
+| sed -r \
+	-e 's#^data/#results/#' \
+	-e 's#_R[12].trunc.fastq.gz$#.pair.sam#' \
+| sort -u
+
