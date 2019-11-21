@@ -16,6 +16,8 @@ Bowtie2 does not have a direct equivalent of the -m 1 option available in the or
 
 A reads is considered as uniquely mapping if the quality score is greater than or equal to 30 and either i) the read cannot be mapped to another location or ii) if the read can be mapped to other locations, then the difference in quality score between this hit and the next-best match should be at least 10 (as reported in the Bowtie2 SAM tags "AS" and "XS"). Before HiCUP version 0.6.1, a unique-mapping read was defined simply as having no next-best hit when using Bowtie2 as the aligner.
 
+[HiCUP scripts](https://www.bioinformatics.babraham.ac.uk/projects/hicup/scripts_description/)
+
 ## Options ##
 
 "Any text not preceded with a flag is assumed to be a sequence filename."
