@@ -7,6 +7,6 @@ find -L data/ \
 	-name "*trunc.fastq.gz" \
 | sed -r \
 	-e 's#^data/#results/#' \
-	-e 's#_R[12].trunc.fastq.gz$#.pair.sam#' \
+	-e 's#_R[12].trunc.fastq.gz$#_R1_2.pair.sam#' \
 | sort -u
 
